@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FriendsBook</h1>
+      <div id="auth-buttons">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+      </div>
+      <div id="user-info" style="display: none;">
+        <span id="username"></span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="profile-info">
+        <h2 id="profile-username"></h2>
+        <img id="profile-picture" src="" alt="Profile picture">
+        <p id="profile-bio"></p>
+        <div>
+          <span id="follower-count">0 followers</span> • 
+          <span id="following-count">0 following</span>
+        </div>
+        <button id="follow-btn" style="display: none;">Follow</button>
+        <button id="unfollow-btn" style="display: none;">Unfollow</button>
+      </div>
+
+      <div id="profile-posts">
+        <h3>Posts</h3>
+        <div id="posts-container"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/auth.js"></script>
+  <script src="/js/profile.js"></script>
+</body>
+</html>
